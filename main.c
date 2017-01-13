@@ -70,9 +70,9 @@ int main(int argc, char** argv) {
 
   	FILE *ifp, *ofp, *slavefp;
 	char *inputFileName = argv[1];	// 	The input file name
-	char *outputFileName = argv[2];	//	The output file name
-	int threshold = atoi(argv[3]);	//	The third argument, threshold value
-	int sizeOfImage=atoi(argv[4]);	//	The fourth argument, size of squared image
+	char *outputFileName = "output.txt";	//	The output file name
+	int threshold = atoi(argv[2]);	//	The third argument, threshold value
+	int sizeOfImage=atoi(argv[3]);	//	The fourth argument, size of squared image
 
 	ifp = fopen(inputFileName, "r");	//	Read from input file.
 	ofp = fopen(outputFileName, "w");	// 	Write to output file.
